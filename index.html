@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Privileged app</title>
+	<meta name="description" content="A privileged app stub">
+	<style>
+		body {
+		
+		    background: linear-gradient(45deg,grey,white 150%)
+		}
+		
+		.lab{
+		            
+		      margin: auto;
+		      margin-top: 50px;
+		   }
+		                input:focus {
+			border-color: rgba(82, 168, 236, 0.75);
+		}
+			input:focus {
+		        border: 5px solid #CCC;
+			border-color: rgba(82, 168, 236, 0.75);
+		}
+			
+		        .form{
+		            border-radius: 4px;
+		            border-color: rgba(8, 8, 10, 0.75);
+		            width: 140px;
+		            margin-left: 35px;  
+		           
+		        }
+	</style>
+	<!--
+          viewport allows you to control how mobile browsers will render your content.
+          width=device-width tells mobile browsers to render your content across the
+          full width of the screen, without being zoomed out (by default it would render
+          it at a desktop width, then shrink it to fit.)
+          Read more about it here:
+          https://developer.mozilla.org/Mozilla/Mobile/Viewport_meta_tag
+        -->
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/app.css">
+	<!--
+        Inline JavaScript code is not allowed for privileged and certified apps,
+        due to Content Security Policy restrictions.
+        You can read more about it here: https://developer.mozilla.org/Apps/CSP
+        Plus keeping your JavaScript separated from your HTML is always a good practice!
+
+        We're also using the 'defer' attribute. This allows us to tell the browser that
+        it should not wait for this file to load before continuing to load the rest of
+        resources in the page. Then, once everything has been loaded, it will parse and
+        execute the deferred files.
+        Read about defer: https://developer.mozilla.org/Web/HTML/Element/script#attr-defer
+        -->
+	<script type="text/javascript" src="js/app.js" defer></script>
+	<!--
+        The following two lines are for loading the localisations library
+        and the localisation data-so people can use the app in their
+        own language (as long as you provide translations).
+        -->
+	<link rel="prefetch" type="application/l10n" href="data/locales.ini" />
+	<script type="text/javascript" src="js/libs/l10n.js" defer>
+	</script>
+</head>
+
+<body>
+	<div class="lab">
+		<div id="chrono">
+			<input class="form items" tabIndex="0" type="submit" for="chrono" value="Chrono" />
+		</div>
+		<br />
+		<br />
+		<div id="compte_a_rebourd">
+			<input class="form items" tabIndex="1" for="chrono" type="submit" value="Compte a rebourd" />
+		</div>
+	</div>
+	<p id="message"></p>
+</body>
+
+</html>     

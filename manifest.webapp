@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "name": "kaios_app_coutndow_chrono",
+  "description": "application which combines two functions: a stopwatch and a countdown",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/img/icons/hugo_16x16.png",
+    "48": "/img/icons/hugo_48x48.png",
+    "60": "/img/icons/hugo_60x60.png",
+    "128": "/img/icons/hugo_128x128.png"
+  },
+    "cursor": true,
+  "developer": {
+    "name": "Hugo",
+    "url": "http://example.com"
+  },
+  "type": "privileged",
+  "permissions": {
+        "alarms" :{
+      
+    },
+    "spatialnavigation-app-manage": {}
+ 
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+
+  
+   
+  "locales": {
+    "es": {
+      "name": "Aplicación vacía privilegiada",
+      "description": "Una plantilla con la mínima estructura",
+      "permissions": {}
+    }
+  },
+  "default_locale": "en"
+}

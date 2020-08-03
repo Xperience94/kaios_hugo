@@ -1,0 +1,76 @@
+html, body {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+body {
+  font-size: 1rem;
+  background: #fff;
+}
+
+h1 {
+  margin: 0 0 1rem 0;
+}
+
+p {
+  font-size: inherit;
+}
+
+body {
+    padding-top: 50px;
+    margin: auto;
+}
+
+.affichage {
+	width: 350px;
+	border: 5px solid #CCC;
+	
+}
+	
+input:focus {
+	border-color: rgba(82, 168, 236, 0.75);
+}
+	
+
+.cor {
+	border-color: rgba(44, 230, 44, 0.75);
+    margin: auto;
+   
+}
+.bla {
+	border-color: rgba(14, 15, 14, 0.75);
+	margin: auto;
+    
+}	
+.exi {
+	border-color: rgba(198, 22, 221, 0.75);
+    margin: auto;
+   
+}	
+.correct:focus {
+	border-color: rgba(68, 191, 68, 0.75);
+	box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+}
+	
+.incorrect {
+	border-color: rgba(191, 68, 68, 0.75);
+    font-size: 1.5em;
+}
+.incor {
+	border-color: rgba(191, 68, 68, 0.75);
+        margin: auto;
+}	
+.incorrect:focus {
+	border-color: rgba(191, 68, 68, 0.75);
+	box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+}
+	
+.tooltip {
+	display: inline-block;
+	margin-left: 0px;
+	padding: 2px 4px;
+	border: 1px solid #555;
+	background-color: #CCC;
+	border-radius: 4px;
+
+}

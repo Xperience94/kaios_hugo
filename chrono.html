@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>chronomètre !</title>
+	<style>
+		body {
+		   padding-top: 50px;
+		    margin: auto;
+		}
+		
+		
+		.affichage {
+			width: 120px;
+			border: 5px solid #CCC;
+			
+		}
+			
+		input:focus {
+			border-color: rgba(82, 168, 236, 0.75);
+		}
+			
+		
+		.cor {
+			border-color: rgba(44, 230, 44, 0.75);
+		    margin: auto;
+			border: 3px solid green;
+		
+		   
+		}
+		.bla {
+			border-color: rgba(14, 15, 14, 0.75);
+			margin: auto;
+			border: 3px solid black;
+		
+		    
+		}	
+		.exi {
+			border-color: rgba(198, 22, 221, 0.75);
+		    margin: auto;
+			border: 3px solid purple;
+		
+		   
+		}	
+		
+			
+		.incorrect {
+			border-color: rgba(191, 68, 68, 0.75);
+		 
+		}
+		.incor {
+			border-color: rgba(191, 68, 68, 0.75);
+		        margin: auto;
+			border: 3px solid red;
+		
+		}	
+		.incorrect:focus {
+			border-color: rgba(191, 68, 68, 0.75);
+			box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+		}
+			
+			
+		.tooltip {
+			display: inline-block;
+			margin-left: 0px;
+			padding: 2px 4px;
+			border: 1px solid #555;
+			background-color: #CCC;
+			border-radius: 4px;
+		
+		}
+	</style>
+	<div>
+		<label class="form_col" for="chrono">Chronomètre :</label>
+	</div>
+</head>
+
+<body>
+	<br />
+	<br />
+	<div id="enter">
+		<div class="diveffet" id="div" type="text">
+			<input class="affichage" id="chrono" type="text" />mins	<span id="avert" class="tooltip"></span>
+		</div>
+	</div>
+	<br />
+	<br />
+	<div id="enter_bis">
+		<div class="diveffet" id="div" type="text">
+			<input class="affichage" name="seconde" id="seconde" type="text" />secondes <span id="avert_s" class="tooltip"></span>
+		</div>
+	</div>
+	<br />
+	<br />
+	<input class="cor items" tabIndex="0" id="lancer_s" type="reset" value="GO" />
+	<input class="incor items" tabIndex="1" id="reset" type="reset" value="RESET" />
+	<input class="bla items" tabIndex="2" id="stop" type="submit" value="STOP" />
+	<input class="exi items" tabIndex="3" id="exit" type="submit" value="EXIT" />
+	<script>
+	</script>
+	<script src="js/chrono.js"></script>
+</body>
+
+</html>
