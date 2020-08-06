@@ -113,10 +113,20 @@ function decremente() {
 
     if (secondes == 0 && minutes == 0) {
         stp = 0;
-
-        var request = navigator.mozAlarms.add(Date(), 'ignoreTimezone');
+       var alarm = {
+        date: Date(),
+        respectTimezone: 'ignoreTimezone',
+        data: {
+          message: 'Do something dude!'
+        }
+       };
+       var request = navigator.mozAlarms.add(
+  alarm.date,
+  alarm.respectTimezone,
+  alarm.data
+)
         request.onsuccess = function() {
-            alert("DONE !!");
+            //alert("DONE !!");
         };
         return;
     }
