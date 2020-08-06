@@ -21,6 +21,10 @@
         "alarms" :{
       
     },
+     "message":[
+       
+       {"alarm":"/index.html"}
+     ],
     "spatialnavigation-app-manage": {}
  
   },

@@ -124,7 +124,11 @@ function decremente() {
   alarm.date,
   alarm.respectTimezone,
   alarm.data
-)
+);
+        navigator.mozSetMessageHandler('alarm', function(mozAlarm) {
+  alert('alarm fired:', JSON.stringify(mozAlarm.data));
+});
+
         request.onsuccess = function() {
             //alert("DONE !!");
         };
@@ -133,7 +137,6 @@ function decremente() {
     timerID = setTimeout(decremente, 1000);
 
 }
-
 
 
 function lancer() { //il gere le bouton de lancer de chrono
